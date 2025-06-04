@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <!--navbar start-->
+      <nav class="navbar">
+        <div class="logo">
+          <h2>logo</h2>
+        </div>
+
+        <div class="link">
+          <a href="#" id="home">Home</a>
+          <a href="">News</a>
+          <a href="">About</a>
+          <a href="">Contact</a>
+        </div>
+
+        <div class="icons">
+          <a href="shoping.html"><i data-feather="shopping-cart"></i></a>
+          <button id="hamburger-menu"><i data-feather="menu"></i></button>
+        </div>
+      </nav>
+      <!--navbar end-->
+
+      <!--input search start-->
+      <div class="search-input">
+        <input type="text" id="searchInput" placeholder="Search" />
+        <button onclick="search()"><i data-feather="search"></i></button>
+      </div>
+      <!--input search end-->
+
+      <!--carousel start-->
+      <div id="carousel" class="carousel-wrapper">
+        <div class="carousel-container">
+          <div class="carousel-track" id="carouselTrack">
+            <img src="carousel-img/img1.jpg" alt="Slide 1" />
+            <img src="carousel-img/img2.jpg" alt="Slide 2" />
+            <img src="carousel-img/img3.jpg" alt="Slide 3" />
+            <img src="carousel-img/img4.jpg" alt="Slide 4" />
+          </div>
+          <button class="carousel-btn prev" onclick="moveSlide(-1)">
+            &#10094;
+          </button>
+          <button class="carousel-btn next" onclick="moveSlide(1)">
+            &#10095;
+          </button>
+        </div>
+      </div>
+      <!--carousel end-->
+
+      <!--card start-->
+      <div id="cardList" class="list">
+        <div data-page="kaos" class="product">
+          <h2>kaos</h2>
+        </div>
+
+        <div data-page="celana" class="product">
+          <h2>celana</h2>
+        </div>
+
+        <div data-page="topi" class="product">
+          <h2>topi</h2>
+        </div>
+
+        <div data-page="sendal" class="product">
+          <h2>sendal</h2>
+        </div>
+
+        <div data-page="sepatu" class="product">
+          <h2>sepatu</h2>
+        </div>
+
+        <div data-page="sweater" class="product">
+          <h2>sweater</h2>
+        </div>
+
+        <div data-page="kaosKaki" class="product">
+          <h2>kaos kaki</h2>
+        </div>
+
+        <div data-page="jamTangan" class="product">
+          <h2>jam tangan</h2>
+        </div>
+      </div>
+      <!--card end-->
+
+      <!--pages start-->
+      <div id="pages">
+        <div id="kaos" class="page">
+          <!-- kaos -->
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/Gance-Black.jpg" alt="" />
+              <h3>Kaos Cowok</h3>
+              <p>Rp.80.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- kaos end -->
+
+        <!-- celana start -->
+        <div id="celana" class="page">
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/celana.jpg" alt="" />
+              <h3>Celana Keren</h3>
+              <p>Rp.120.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/celana.jpg" alt="" />
+              <h3>Celana Keren</h3>
+              <p>Rp.120.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/celana.jpg" alt="" />
+              <h3>Celana Keren</h3>
+              <p>Rp.120.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/celana.jpg" alt="" />
+              <h3>Celana Keren</h3>
+              <p>Rp.120.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/celana.jpg" alt="" />
+              <h3>Celana Keren</h3>
+              <p>Rp.120.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/celana.jpg" alt="" />
+              <h3>Celana Keren</h3>
+              <p>Rp.120.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- celana end -->
+
+        <!-- topi start -->
+        <div id="topi" class="page">
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/topi.jpg" alt="" />
+              <h3>Topi Keren</h3>
+              <p>Rp.35.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/topi.jpg" alt="" />
+              <h3>Topi Keren</h3>
+              <p>Rp.35.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/topi.jpg" alt="" />
+              <h3>Topi Keren</h3>
+              <p>Rp.35.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/topi.jpg" alt="" />
+              <h3>Topi Keren</h3>
+              <p>Rp.35.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/topi.jpg" alt="" />
+              <h3>Topi Keren</h3>
+              <p>Rp.35.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/topi.jpg" alt="" />
+              <h3>Topi Keren</h3>
+              <p>Rp.35.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- topi end -->
+
+        <!-- sendal start -->
+        <div id="sendal" class="page">
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/sendal.jpg" alt="" />
+              <h3>Sendal Keren</h3>
+              <p>Rp.20.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sendal.jpg" alt="" />
+              <h3>Sendal Keren</h3>
+              <p>Rp.20.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sendal.jpg" alt="" />
+              <h3>Sendal Keren</h3>
+              <p>Rp.20.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sendal.jpg" alt="" />
+              <h3>Sendal Keren</h3>
+              <p>Rp.20.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sendal.jpg" alt="" />
+              <h3>Sendal Keren</h3>
+              <p>Rp.20.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sendal.jpg" alt="" />
+              <h3>Sendal Keren</h3>
+              <p>Rp.20.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- sendal end -->
+
+        <!-- sepatu start -->
+        <div id="sepatu" class="page">
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/sepatu.jpg" alt="" />
+              <h3>Sepatu Keren</h3>
+              <p>Rp.200.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sepatu.jpg" alt="" />
+              <h3>Sepatu Keren</h3>
+              <p>Rp.200.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sepatu.jpg" alt="" />
+              <h3>Sepatu Keren</h3>
+              <p>Rp.200.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sepatu.jpg" alt="" />
+              <h3>Sepatu Keren</h3>
+              <p>Rp.200.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sepatu.jpg" alt="" />
+              <h3>Sepatu Keren</h3>
+              <p>Rp.200.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sepatu.jpg" alt="" />
+              <h3>Sepatu Keren</h3>
+              <p>Rp.200.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- sepatu end -->
+
+        <!-- sweater start -->
+        <div id="sweater" class="page">
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/sweater.jpg" alt="" />
+              <h3>Sweater Polos</h3>
+              <p>Rp.110.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sweater.jpg" alt="" />
+              <h3>Sweater Polos</h3>
+              <p>Rp.110.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sweater.jpg" alt="" />
+              <h3>Sweater Polos</h3>
+              <p>Rp.110.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sweater.jpg" alt="" />
+              <h3>Sweater Polos</h3>
+              <p>Rp.110.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sweater.jpg" alt="" />
+              <h3>Sweater Polos</h3>
+              <p>Rp.110.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/sweater.jpg" alt="" />
+              <h3>Sweater Polos</h3>
+              <p>Rp.110.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- sweater end -->
+
+        <!-- kaos kaki start -->
+        <div id="kaosKaki" class="page">
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/kaos-kaki.jpg" alt="" />
+              <h3>Kaos kaki Cowok</h3>
+              <p>Rp.15.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/kaos-kaki.jpg" alt="" />
+              <h3>Kaos kaki Cowok</h3>
+              <p>Rp.15.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/kaos-kaki.jpg" alt="" />
+              <h3>Kaos kaki Cowok</h3>
+              <p>Rp.15.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/kaos-kaki.jpg" alt="" />
+              <h3>Kaos kaki Cowok</h3>
+              <p>Rp.15.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/kaos-kaki.jpg" alt="" />
+              <h3>Kaos kaki Cowok</h3>
+              <p>Rp.15.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/kaos-kaki.jpg" alt="" />
+              <h3>Kaos kaki Cowok</h3>
+              <p>Rp.15.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- kaos kaki end -->
+
+        <!-- jam tangan start -->
+        <div id="jamTangan" class="page">
+          <div class="barang">
+            <div class="list-barang">
+              <img src="product-img/jam-tangan.jpg" alt="" />
+              <h3>Jam tangan Cowok</h3>
+              <p>Rp.70.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/jam-tangan.jpg" alt="" />
+              <h3>Jam tangan Cowok</h3>
+              <p>Rp.70.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/jam-tangan.jpg" alt="" />
+              <h3>Jam tangan Cowok</h3>
+              <p>Rp.70.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/jam-tangan.jpg" alt="" />
+              <h3>Jam tangan Cowok</h3>
+              <p>Rp.70.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/jam-tangan.jpg" alt="" />
+              <h3>Jam tangan Cowok</h3>
+              <p>Rp.70.000</p>
+            </div>
+            <div class="list-barang">
+              <img src="product-img/jam-tangan.jpg" alt="" />
+              <h3>Jam tangan Cowok</h3>
+              <p>Rp.70.000</p>
+            </div>
+          </div>
+        </div>
+        <!-- jam tangan end -->
+      </div>
+    </div>
+
+    <!--pages end-->
+
+    <!--footer start-->
+    <footer>
+      <div class="sosmed">
+        <a href=""><i data-feather="instagram"></i></a>
+        <a href=""><i data-feather="facebook"></i></a>
+        <a href=""><i data-feather="mail"></i></a>
+      </div>
+
+      <div class="copyright">
+        <p>copyright &copy; 2025 | Toko Online</p>
+      </div>
+    </footer>
+    <!--footer end-->
+
+    <!--feather icons-->
+    <script>
+      feather.replace();
+    </script>
+    <!--feather icons end-->
+
+    <!--java script-->
+    <script src="main.js"></script>
+    <script src="carousel.js"></script>
+    <script src="spa.js"></script>
+  </body>
+</html>

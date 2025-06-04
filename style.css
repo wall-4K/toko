@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  height: 100vh;
+  background: url("img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-color: #333;
+}
+
+.content {
+  flex: 1;
+}
+
+.navbar {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c69d44;
+  height: 60px;
+  padding: 0 2rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.link {
+  position: relative;
+}
+
+.link a {
+  color: #fff;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0 1.2rem;
+  cursor: pointer;
+}
+
+.link a:hover {
+  color: #333;
+}
+
+.link a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #333;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.link a:hover::after {
+  transform: scaleX(0.5);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+.icons a {
+  color: #fff;
+  padding: 0 0.5rem;
+}
+
+.icons a:hover {
+  color: #333;
+  transition: 0.2s;
+}
+
+.icons button {
+  color: #fff;
+  background: none;
+  border: none;
+  padding: 0 5px;
+}
+
+.icons button:hover {
+  color: #333;
+  transition: 0.2s;
+}
+
+.search-input {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+.search-input input {
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1.5rem;
+  width: 720px;
+  margin: 0 0.5rem;
+}
+
+.search-input button {
+  cursor: pointer;
+  padding: 0 0.5rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+
+/*carousel start*/
+.carousel-wrapper {
+  width: 100%;
+  text-align: center;
+  overflow-x: auto;
+  padding: 1rem 36px;
+}
+
+.carousel-container {
+  display: inline-block;
+  position: relative;
+  width: 783px;
+  height: 391px;
+  overflow: hidden;
+  border-radius: 25px;
+  box-shadow: 10px 18px #333;
+}
+
+/* Carousel track dan gambar */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  height: 100%;
+}
+
+.carousel-track img {
+  width: 783px;
+  height: 391px;
+  object-fit: cover;
+  flex: 0 0 auto;
+  display: block;
+}
+
+/* Tombol Navigasi */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+/*carousel end*/
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.product {
+  background-color: #c69d44;
+  padding: 0 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 150px;
+  transition: 0.2s ease;
+}
+.product:hover {
+  transform: scale(1.05);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: inline-block;
+}
+
+/* list product start */
+.barang {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 100px;
+  gap: 30px;
+}
+
+.list-barang {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.list-barang img {
+  background-color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  height: 300px;
+  width: 200px;
+  transition: 0.2s ease;
+}
+
+.list-barang:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+/* list product end */
+
+/* footer start */
+footer {
+  position: relative;
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: #c69d44;
+  padding: 1rem;
+}
+
+.sosmed a {
+  color: #fff;
+  padding: 20px;
+}
+
+.sosmed a:hover {
+  color: #333;
+  background: #fff;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.copyright {
+  padding: 20px 0;
+}
+/* footer end */
+
+/*media queries*/
+
+@media (max-width: 390px) {
+  html {
+    font-size: 75%;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: sticky;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .link {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .link a {
+    color: black;
+    display: block;
+    margin: 1.4rem;
+    padding: 0.7rem;
+  }
+
+  .link a::after {
+    transform-origin: 0 0;
+  }
+
+  .link a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .link.active {
+    right: 0;
+  }
+
+  .search-input input {
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    width: 360px;
+    margin: 0 0.5rem;
+  }
+
+  /*carousel start*/
+  .carousel-wrapper {
+    padding: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-track {
+    height: auto;
+  }
+
+  .carousel-track img {
+    width: 100%;
+    height: auto;
+    /*carousel end*/
+  }
+}
+
+@media (max-width: 490px) {
+  html {
+    font-size: 75%;
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    position: sticky;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+
+  .link {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 20rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .link a {
+    color: black;
+    display: block;
+    margin: 1.4rem;
+    padding: 0.7rem;
+  }
+
+  .link a::after {
+    transform-origin: 0 0;
+  }
+
+  .link a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .link.active {
+    right: 0;
+  }
+
+  .search-input input {
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.5rem;
+    width: 380px;
+    margin: 0 0.5rem;
+  }
+
+  /*carousel start*/
+  .carousel-wrapper {
+    padding: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-track {
+    height: auto;
+  }
+
+  .carousel-track img {
+    width: 100%;
+    height: auto;
+  }
+  /*carousel end*/
+
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product {
+    height: 70px;
+  }
+
+  /* list barang start*/
+  .barang {
+    padding: 20px;
+    gap: 1px;
+  }
+
+  .list-barang {
+    padding: 8px;
+  }
+
+  .list-barang img {
+    width: 150px;
+    height: 200px;
+  }
+  /* list barang end */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  .navbar {
+    position: sticky;
+  }
+
+  .carousel-wrapper {
+    padding: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-track {
+    height: auto;
+  }
+
+  .carousel-track img {
+    width: 100%;
+    height: auto;
+  }
+
+  .barang {
+    padding: 30px 10px;
+    gap: 5px;
+  }
+
+  .list-barang {
+    padding: 20px;
+  }
+
+  .list-barang img {
+    width: 150px;
+    height: 200px;
+  }
+}
+@media (max-width: 920px) {
+  html {
+    font-size: 75%;
+  }
+
+  .navbar {
+    position: sticky;
+  }
+
+  .carousel-wrapper {
+    padding: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-track {
+    height: auto;
+  }
+
+  .carousel-track img {
+    width: 100%;
+    height: auto;
+  }
+
+  .barang {
+    padding: 30px 10px;
+    gap: 5px;
+  }
+
+  .list-barang {
+    padding: 20px;
+  }
+
+  .list-barang img {
+    width: 150px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+
+  .navbar {
+    position: sticky;
+  }
+
+  .carousel-wrapper {
+    padding: auto;
+  }
+
+  .carousel-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel-track {
+    height: auto;
+  }
+
+  .carousel-track img {
+    width: 100%;
+    height: auto;
+  }
+}
